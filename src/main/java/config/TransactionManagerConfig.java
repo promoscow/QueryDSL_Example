@@ -50,7 +50,7 @@ public class TransactionManagerConfig {
         dataSource.setDriverClass("org.postgresql.Driver");
         dataSource.setJdbcUrl("jdbc:postgresql://localhost:5432/qdsl_example");
         dataSource.setUser("postgres");
-        dataSource.setPassword("91108352");
+        dataSource.setPassword("12345");
         return dataSource;
     }
 
@@ -61,18 +61,4 @@ public class TransactionManagerConfig {
         transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
         return transactionManager;
     }
-
-//    public DataSource dataSource() throws PropertyVetoException {
-//        ComboPooledDataSource dataSource = new ComboPooledDataSource();
-//        dataSource.setDriverClass(env.getProperty("db.driver"));
-//        dataSource.setJdbcUrl(env.getProperty("db.url"));
-//        dataSource.setUser(env.getProperty("db.username"));
-//        dataSource.setPassword(env.getProperty("db.password"));
-//        dataSource.setMaxPoolSize(Integer.parseInt(env.getProperty("db.maxPoolSize")));
-//        dataSource.setMinPoolSize(Integer.parseInt(env.getProperty("db.minPoolSize")));
-//        dataSource.setMaxStatements(Integer.parseInt(env.getProperty("db.maxStatements")));
-//        dataSource.setPreferredTestQuery(env.getProperty("db.preferredTestQuery"));
-//        dataSource.setTestConnectionOnCheckout(Boolean.parseBoolean(env.getProperty("db.testConnection")));
-//        return dataSource;
-//    }
 }

@@ -20,7 +20,7 @@ import org.springframework.web.servlet.view.JstlView;
  * @date 20.11.17
  */
 @Configuration
-@ComponentScan(basePackages = {"controller", "service", "config"})
+@ComponentScan(basePackages = {"service", "config"})
 @EnableSpringDataWebSupport
 @EnableWebMvc
 @EnableJpaRepositories(value = "repository")
